@@ -16,6 +16,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  list-style-type: none;
 }
 .container {
 }
@@ -33,13 +34,32 @@
   font-weight: 600;
 }
 .container > .title {
-    display: flex;
-    
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 30px;
+  margin: 0px auto;
 }
 .container > .title > .pic {
-    
 }
 .container > .title > .pic > img {
-    width: 123px;
-    height: 29px;
+  width: 123px;
+  height: 29px;
+}
+.container > .title > .ordderd {
+
+}
+.container > .title > .ordderd > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+.ordderd > ul > li {
+    padding: 0px 20px;
+}
+.ordderd > ul > li > a {
+    text-decoration: none;
+    color: #000;
+    font-family: "TitilliumWeb-SemiBold";
+    font-weight: 100;
 }
