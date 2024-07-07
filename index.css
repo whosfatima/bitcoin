@@ -1,5 +1,34 @@
+/* @import url(https://fonts.google.com); */
+@font-face {
+    font-family: 'TitilliumWeb-SemiBold';
+    src: url(./style/fonts/TitilliumWeb-SemiBold.eot);
+    src: url(./style/fonts/TitilliumWeb-SemiBold.eot?#iefix) format('embedded-opentype'),
+         url(./style/fonts/TitilliumWeb-SemiBold.woff2) format('woff2'),
+         url(./style/fonts/TitilliumWeb-SemiBold.woff) format('woff'),
+         url(./style/fonts/TitilliumWeb-SemiBold.ttf) format('truetype'),
+         url(./style/fonts/TitilliumWeb-SemiBold.svg#TitilliumWeb-SemiBold) format('svg'),
+         url(./style/fonts/TitilliumWeb-SemiBold.otf) format('otf');
+         
+  }
+  
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+.container {
+
+}
+.container > .header {
+    width: 100%;
+    height: 55px;
+    background-color: #f7931a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.container > .header > p {
+    font-family: 'TitilliumWeb-SemiBold';
+    font-weight: 600;
 }
