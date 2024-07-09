@@ -18,6 +18,9 @@
   box-sizing: border-box;
   list-style-type: none;
 }
+body {
+  font-family: "TitilliumWeb-SemiBold";
+}
 .container {
 }
 .container > .header {
@@ -30,7 +33,7 @@
   cursor: pointer;
 }
 .container > .header > p {
-  font-family: "TitilliumWeb-SemiBold";
+  /* font-family: "TitilliumWeb-SemiBold"; */
   font-weight: 600;
 }
 .container > .title {
@@ -55,10 +58,49 @@
   justify-content: center;
   align-items: center;
   padding-left: 20px;
+  position: relative;
 }
 .ordderd > ul > li {
   padding: 0px 20px;
 }
+/* زیر بوردر ها */
+.ordderd > ul > li > ul {
+  position: absolute;
+  top: 25px;
+ left: -80px;
+  z-index: 99;
+  transition: all 0.2s ease-in-out;
+  width: 40%;
+  height: 230px;
+  border: lightgray solid 1px;
+  opacity: 0px;
+  visibility: hidden;
+  z-index: 99;
+  transition: all .1s ease-in-out;
+}
+
+.ordderd > ul > li > ul > li {
+  border: 1px transparent solid;
+  background-color: transparent;
+  padding-top: 10px;
+  padding-left: 5px;
+  width: 100%;
+}
+.ordderd > ul > li > ul > li > a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+.ordderd > ul > li > ul > li:hover {
+  width: 100%;
+  background-color: lightgray;
+}
+.ordderd > ul > .li1:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  transition: all .1s;
+}
+
 .ordderd > ul > li > a {
   text-decoration: none;
   color: #000;
@@ -72,16 +114,15 @@
   transform: rotate(-180deg);
 }
 .lan > ul {
-   
 }
 .lan > ul > li > a {
-    text-decoration: none;
-    color: black;
-    font-family:  "TitilliumWeb-SemiBold";
+  text-decoration: none;
+  color: black;
+  font-family: "TitilliumWeb-SemiBold";
 }
 .lan > ul > li > a > i {
-    transition: all 0.2s;
-  }
-  .lan > ul > li:hover > a > i {
-    transform: rotate(-180deg);
-  }
+  transition: all 0.2s;
+}
+.lan > ul > li:hover > a > i {
+  transform: rotate(180deg);
+}
