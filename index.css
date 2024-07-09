@@ -71,3 +71,17 @@
 .ordderd > ul > li:hover > a > i {
   transform: rotate(-180deg);
 }
+.lan > ul {
+   
+}
+.lan > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-family:  "TitilliumWeb-SemiBold";
+}
+.lan > ul > li > a > i {
+    transition: all 0.2s;
+  }
+  .lan > ul > li:hover > a > i {
+    transform: rotate(-180deg);
+  }
