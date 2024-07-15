@@ -64,6 +64,7 @@ body {
   padding: 0px 20px;
 }
 /* زیر بوردر ها */
+
 .ordderd > ul > li > .ul1 {
   /* display: flex;
  flex-flow: column ;
@@ -84,8 +85,6 @@ body {
   z-index: 99;
   transition: all 0.1s ease-in-out;
 }
-
-/*  */
 
 .ordderd > ul > li > ul > li {
   border: 1px transparent solid;
@@ -186,29 +185,51 @@ body {
 }
 
 /* زیر منوی زبان ها */
-.container .lan ul li > ul {
+.container .lan ul > li > ul {
   background-color: #fff;
+  width: 800%;
+  height: 1600px;
   position: absolute;
-  right: 90px;
-  width: 500px;
-  height: 950px;
+  right: 10px;
   display: flex;
   flex-flow: column wrap;
-   border: 1px solid lightgray;
+  border: 1px solid lightgray;
+  z-index: 99;
+
+  /* 
+        background-color: #fff;
+  position: absolute;
+  top: 25px;
+  left: -80px;
+  
+  transition: all 0.2s ease-in-out;
+  width: 40%;
+  height: 215px;
+  border: lightgray solid 1px;
+  opacity: 0px;
+  visibility: hidden;
+  z-index: 99;
+  transition: all 0.1s ease-in-out;
+   */
 }
 .container .lan ul li > ul > li {
   background-color: transparent;
-  margin: 10px 10px;
-  width: 60%;
+  border: none ;
+  margin:10px 2px;
+  width: 50%;
   height: 65px;
- 
+  /* border: 1px solid; */
 }
 .container .lan ul li > ul > li > a {
-  width: 100%;
+  width: 50%;
   text-decoration: none;
   color: lightgray;
+  padding-top:0px ;
+  font-size: 16px;
+  
 }
-.container .lan ul li > ul > li:hover > a {
+.container .lan ul li > ul > li:hover{
   background-color: darkgray;
-  width: 100%;
+  width: 50%;
+  /* height: 100%; */
 }
