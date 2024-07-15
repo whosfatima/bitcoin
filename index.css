@@ -64,26 +64,39 @@ body {
   padding: 0px 20px;
 }
 /* زیر بوردر ها */
-.ordderd > ul > li > ul {
+.ordderd > ul > li > .ul1 {
+  /* display: flex;
+ flex-flow: column ;
+ align-items: center;
+ justify-content: center;
+   */
+  background-color: #fff;
   position: absolute;
   top: 25px;
- left: -80px;
+  left: -80px;
   z-index: 99;
   transition: all 0.2s ease-in-out;
   width: 40%;
-  height: 230px;
+  height: 215px;
   border: lightgray solid 1px;
   opacity: 0px;
   visibility: hidden;
   z-index: 99;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
+
+/*  */
 
 .ordderd > ul > li > ul > li {
   border: 1px transparent solid;
   background-color: transparent;
-  padding-top: 10px;
+  /* display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center; */
+  padding-top: 5px;
   padding-left: 5px;
+  margin-top: 5px;
   width: 100%;
 }
 .ordderd > ul > li > ul > li > a {
@@ -98,8 +111,52 @@ body {
 .ordderd > ul > .li1:hover > ul {
   opacity: 1;
   visibility: visible;
-  transition: all .1s;
+  transition: all 0.1s;
 }
+.ordderd > ul > .li2 > .ul2 {
+  position: absolute;
+  background-color: #fff;
+  top: 25px;
+  right: 270px;
+  z-index: 99;
+  transition: all 0.2s ease-in-out;
+  width: 40%;
+  height: 253px;
+  border: lightgray solid 1px;
+  opacity: 0px;
+  visibility: hidden;
+  z-index: 99;
+  transition: all 0.1s ease-in-out;
+}
+
+.ordderd > ul > .li2:hover > .ul2 {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.1s;
+}
+
+.ordderd > ul > .li3 .ul3 {
+  position: absolute;
+  background-color: #fff;
+  top: 25px;
+  right: 50px;
+  z-index: 99;
+  transition: all 0.2s ease-in-out;
+  width: 40%;
+  height: 155px;
+  border: lightgray solid 1px;
+  opacity: 0px;
+  visibility: hidden;
+  z-index: 99;
+  transition: all 0.1s ease-in-out;
+}
+.ordderd > ul > .li3:hover > .ul3 {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.1s;
+}
+
+/* پایان زیر منو ها */
 
 .ordderd > ul > li > a {
   text-decoration: none;
@@ -114,6 +171,7 @@ body {
   transform: rotate(-180deg);
 }
 .lan > ul {
+  position: relative;
 }
 .lan > ul > li > a {
   text-decoration: none;
@@ -125,4 +183,32 @@ body {
 }
 .lan > ul > li:hover > a > i {
   transform: rotate(180deg);
+}
+
+/* زیر منوی زبان ها */
+.container .lan ul li > ul {
+  background-color: #fff;
+  position: absolute;
+  right: 90px;
+  width: 500px;
+  height: 950px;
+  display: flex;
+  flex-flow: column wrap;
+   border: 1px solid lightgray;
+}
+.container .lan ul li > ul > li {
+  background-color: transparent;
+  margin: 10px 10px;
+  width: 60%;
+  height: 65px;
+ 
+}
+.container .lan ul li > ul > li > a {
+  width: 100%;
+  text-decoration: none;
+  color: lightgray;
+}
+.container .lan ul li > ul > li:hover > a {
+  background-color: darkgray;
+  width: 100%;
 }
